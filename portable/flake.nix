@@ -1,5 +1,5 @@
 {
-  description = "NixOS configuration of Ryan Yin";
+  description = "Portable and easy to deploy NixOS Flake";
 
   inputs = {
     nixpkgs.url = "github:nixos/nixpkgs/nixos-25.05";
@@ -15,16 +15,17 @@
     ...
   }: {
     nixosConfigurations = {
-      ai = nixpkgs.lib.nixosSystem {
+      #
+      foxcatcher = nixpkgs.lib.nixosSystem {
         system = "x86_64-linux";
         specialArgs =
           inputs
           // {
-            myvars.username = "ryan";
-            myvars.userfullname = "Ryan Yin";
+            myvars.username = "ajg";
+            myvars.userfullname = "Anthony J. G.";
           };
         modules = [
-          {networking.hostName = "ai";}
+          {networking.hostName = "foxcatcher";}
 
           ./configuration.nix
 
@@ -43,8 +44,8 @@
         specialArgs =
           inputs
           // {
-            myvars.username = "ryan";
-            myvars.userfullname = "Ryan Yin";
+            myvars.username = "ajg";
+            myvars.userfullname = "Anthony J. G.";
           };
         modules = [
           # Building on a USB installer is buggy, lack of disk space, memory, trublesome to setup substituteers, etc.
