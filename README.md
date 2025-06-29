@@ -6,6 +6,7 @@
 
 
 > Based heavily on [this flake](https://github.com/ryan4yin/nix-config/tree/main) by [Ryan4Yin](https://github.com/ryan4yin).
+> NOTE: Migration from source flake is still VERY MUCH **INCOMPLETE**
 
 This repository is home to the nix code that builds my systems:
 
