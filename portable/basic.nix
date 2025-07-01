@@ -56,6 +56,7 @@
     extraGroups = [ "networkmanager" "wheel" ];
     packages = with pkgs; [];
   };
+  users.groups.superu = {};
 
   # List packages installed in system profile. To search, run:
   # $ nix search wget
