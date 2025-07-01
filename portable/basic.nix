@@ -50,8 +50,8 @@
 
   # Define a user account. Don't forget to set a password with ‘passwd’.
   users.users.superu = {
-    isSystemUser = true
-    group = "superu"
+    isSystemUser = true;
+    group = "superu";
     description = "Default Super User";
     extraGroups = [ "networkmanager" "wheel" ];
     packages = with pkgs; [];
@@ -83,7 +83,7 @@
     ports = [ 22 ];
     settings = {
       PasswordAuthentication = true;
-      AllowUsers = [ "ajg-super" ];
+      AllowUsers = [ "lucca" ];
       UseDns = true;
       X11Forwarding = false;
       PermitRootLogin = "prohibit-password";
