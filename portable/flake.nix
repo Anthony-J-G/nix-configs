@@ -3,9 +3,9 @@
 
   inputs = {
     nixpkgs.url = "github:nixos/nixpkgs/nixos-25.05";
-    preservation.url = "github:nix-community/preservation";
-    nixos-hardware.url = "github:NixOS/nixos-hardware/master";
-    nuenv.url = "github:DeterminateSystems/nuenv";
+    #preservation.url = "github:nix-community/preservation";
+    #nixos-hardware.url = "github:NixOS/nixos-hardware/master";
+    #nuenv.url = "github:DeterminateSystems/nuenv";
   };
 
   outputs = inputs @ {
