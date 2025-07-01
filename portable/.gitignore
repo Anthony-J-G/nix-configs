@@ -1,2 +1,3 @@
 # generate lock file every time
 flake.lock
+hardware-configuration.nix

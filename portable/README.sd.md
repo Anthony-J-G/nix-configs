@@ -1,4 +1,4 @@
-# Nix Environment Setup for Host: 12Kingdoms - Shoukei
+# Nix Environment Setup for Host with 
 
 > :red_circle: **IMPORTANT**: **Once again, you should NOT deploy this flake directly on your
 > machine :exclamation: Please write your own configuration from scratch, and use my configuration

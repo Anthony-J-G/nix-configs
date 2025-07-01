@@ -16,26 +16,18 @@
   }: {
     nixosConfigurations = {
       # Baseline server deployment
-      foxcatcher = nixpkgs.lib.nixosSystem {
+      lucca = nixpkgs.lib.nixosSystem {
         system = "x86_64-linux";
         specialArgs =
           inputs
           // {
-            myvars.username = "ajg";
-            myvars.userfullname = "Anthony J. G.";
+            myvars.username = "default";
+            myvars.userfullname = "Default Super User";
           };
         modules = [
-          {networking.hostName = "foxcatcher";}
+          {networking.hostName = "lucca";}
 
-          ./configuration.nix
-
-          ../modules/base
-          ../modules/nixos/base/i18n.nix
-          ../modules/nixos/base/user-group.nix
-          ../modules/nixos/base/networking.nix
-
-          ../hosts/idols-ai/hardware-configuration.nix
-          ../hosts/idols-ai/preservation.nix
+          ./basic.nix
         ];
       };
 
