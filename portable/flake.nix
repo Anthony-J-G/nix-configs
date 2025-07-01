@@ -10,8 +10,8 @@
 
   outputs = inputs @ {
     nixpkgs,
-    nixos-hardware,
-    nuenv,
+    #nixos-hardware,
+    #nuenv,
     ...
   }: {
     nixosConfigurations = {
