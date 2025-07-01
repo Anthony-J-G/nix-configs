@@ -27,7 +27,13 @@
         modules = [
           {networking.hostName = "lucca";}
 
-          ./basic.nix
+          ./configuration.nix
+          ../modules/base
+          # ../modules/nixos/base/i18n.nix
+          ../modules/nixos/base/user-group.nix
+          ../modules/nixos/base/networking.nix
+
+          ./hardware-configuration.nix
         ];
       };
 
